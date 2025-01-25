@@ -98,12 +98,18 @@ height: auto;
 .top div, .bottom div{
     width:50%
 }
-div img{
-    width: 100%;
+.image{
+    display: flex; /* Align items in a row */
+    align-items: center; /* Vertically center-align text with the image */
+    gap: 20px; /* Space between the image and text */
+}
+.company-details image{
+    width: 150px; /* Set desired image size */
+    height: auto; /* Maintain aspect ratio */
 }
 div.content{
-    padding: 100px;
-    text-align: left;
+    font-size: 16px; /* Adjust text size */
+  max-width: 400px; /* Optional: Limit text width */
 
 }
 
