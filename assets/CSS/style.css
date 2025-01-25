@@ -85,32 +85,73 @@ height: auto;
     width: 300px;  
 }
 /*Main Section End*/
-/*company detail start*/
-.company-details{
-    width: 100%;
-    padding: 0px 100px;
-}
-.company-details .top,
-.company-details .bottom{
-    display: flex;
-    justify-content: space-between;
-}
-.top div, .bottom div{
-    width:50%
-}
-.image{
-    display: flex; /* Align items in a row */
-    align-items: center; /* Vertically center-align text with the image */
-    gap: 20px; /* Space between the image and text */
-}
-.company-details image{
-    width: 150px; /* Set desired image size */
-    height: auto; /* Maintain aspect ratio */
-}
-div.content{
-    font-size: 16px; /* Adjust text size */
-  max-width: 400px; /* Optional: Limit text width */
+/*Blue section start*/
+.about {
+    background-color: #002577; /* Blue background */
+    color: white; /* White text */
+    text-align: center; /* Center-align content */
+    padding: 30px 100px; /* Spacing inside the box */
+    margin: 20px auto; /* Center box horizontally with auto */
+  }
+  
+  .about h2 {
+    font-size: 35px; /* Font size for the heading */
+    margin-bottom: 20px; /* Spacing below the heading */
+  }
+  
+  .about p {
+    font-size: 16px; /* Font size for the paragraph */
+    line-height: 1.6; /* Line spacing for better readability */
+    margin-bottom: 20px; /* Space below the paragraph */
+  }
+  
+  .about-button {
+    background-color: white; /* Button background */
+    color: #002577; /* Button text color */
+    border: none; /* No border */
+    padding: 10px 20px; /* Button padding */
+    font-size: 16px; /* Button text size */
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+  
+  .about-button:hover {
+    background-color: #e6e6e6; /* Slight gray background on hover */
+  }
 
-}
-
+/*Blue section end*/
 /*company detail start*/
+.company-Details .top, .company-Details .bottom {
+    display: flex; /* Arrange items side by side */
+    align-items: center; /* Center items vertically */
+    gap: 20px; /* Space between image and content */
+    margin: 20px auto; /* Center the section horizontally */
+    max-width: 1200px; /* Optional: Limit the width of the section */
+  }
+  
+  .company-Details .top {
+    flex-direction: row; /* Image on the left, content on the right */
+  }
+  
+  .company-Details .bottom {
+    flex-direction: row-reverse; /* Image on the right, content on the left */
+  }
+  
+  .company-Details .image img {
+    width: 500px; /* Make the image responsive */
+    height: 300px; /* Maintain the aspect ratio */
+  }
+  
+  .company-Details .content {
+    flex: 1; /* Allow the text section to take up remaining space */
+  }
+  
+  .company-Details .content h2 {
+    font-size: 40px; /* Font size for the heading */
+    margin-bottom: 10px; /* Space below the heading */
+  }
+  
+  .company-Details .content p {
+    font-size: 20px; /* Font size for the paragraph */
+    line-height: 1.6; /* Line spacing for better readability */
+  }
+/*company detail End*/
